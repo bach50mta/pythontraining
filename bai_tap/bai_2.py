@@ -5,7 +5,12 @@ kết quả đầu ra phải là 40320.
 """
 
 def giaithua(number):
-    while ()
+    while (number<0):
+        print("Phải nhập vào số nguyên dương")
+        number = input("Nhập lại đi: ")
+    if number==0:
+        return 1
+    return number*giaithua(number-1)
 
-
-print(giaithua(-8))
+number = int(input("Nhập vào giá trị cần tính giai thừa: "))
+print (giaithua(number))
